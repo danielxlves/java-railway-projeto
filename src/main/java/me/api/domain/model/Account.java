@@ -15,10 +15,10 @@ public class Account {
     @Column(unique = true)
     private String cc;
 
-    @Column(nullable = false, scale = 13, precision = 2)
+    @Column(nullable = false, scale = 2, precision = 13)
     private BigDecimal balance;
 
-    @Column(name = "additional_limit",nullable = false, scale = 13, precision = 2)
+    @Column(name = "additional_limit",nullable = false, scale = 2, precision = 13)
     private BigDecimal limit;
 
 
