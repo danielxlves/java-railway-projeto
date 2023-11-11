@@ -10,6 +10,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @OpenAPIDefinition(servers = {@Server(url = "/", description = "Default Server URL")})
 public class ProjetoNuvemApplication {
 
+	public String PORT = System.getenv("PORT");
+
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetoNuvemApplication.class, args);
 	}
